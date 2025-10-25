@@ -1,0 +1,22 @@
+gmail-uptimekuma-alert-cleaner
+gmail-uptimekuma-alert-cleaner-*
+.idea
+credentials.json
+token.json
+config.json
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
