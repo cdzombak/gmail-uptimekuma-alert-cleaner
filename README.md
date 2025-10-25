@@ -27,18 +27,24 @@ The program works backwards in time to find matching down/up pairs:
 
 ## Installation
 
+### Pre-built binaries
+
+Download pre-built binaries from the [Releases page](https://github.com/cdzombak/gmail-uptimekuma-alert-cleaner/releases).
+
 ### Build from source
 
-```bash
-go install github.com/cdzombak/gmail-uptimekuma-alert-cleaner@latest
-```
-
-Or clone and build:
+Using Make (recommended - embeds version information):
 
 ```bash
 git clone https://github.com/cdzombak/gmail-uptimekuma-alert-cleaner.git
 cd gmail-uptimekuma-alert-cleaner
-go build
+make build
+```
+
+Or using go install:
+
+```bash
+go install github.com/cdzombak/gmail-uptimekuma-alert-cleaner@latest
 ```
 
 ## Setup
@@ -199,6 +205,17 @@ The program uses semantic exit codes from [exitcode_go](https://github.com/cdzom
 - `69` - Service unavailable (Gmail API failure)
 - `74` - I/O error
 - `78` - Configuration error
+
+## Development
+
+### Make Targets
+
+- `make build` - Build binary for current system with version information
+- `make build-all` - Cross-compile for all supported platforms (Linux, macOS, Windows)
+- `make test` - Run tests with race detector and coverage
+- `make lint` - Run golangci-lint
+- `make clean` - Remove built binaries and coverage files
+- `make version` - Print current version
 
 ## License
 
