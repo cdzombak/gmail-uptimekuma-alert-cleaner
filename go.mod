@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/cdzombak/exitcode_go v0.0.2
-	golang.org/x/oauth2 v0.32.0
+	golang.org/x/oauth2 v0.33.0
 	google.golang.org/api v0.253.0
 )
 
